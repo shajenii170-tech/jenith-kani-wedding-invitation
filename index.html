@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John Jenith &amp; Nagakanni – Wedding Invitation</title>
+<meta name="description" content="Save the date – 20 January 2027. Join us as John Jenith and Nagakanni begin their forever.">
+<meta property="og:title" content="John Jenith &amp; Nagakanni – Save the Date">
+<meta property="og:description" content="20 January 2027 · You are warmly invited">
+<meta property="og:image" content="images/g3.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14183a;--ink2:#1f2552;--gold:#c9a45c;--gold2:#e6cf9a;--blush:#f7ece6;--paper:#fffaf6;--text:#2b2d42}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Jost,sans-serif;background:var(--paper);color:var(--text);line-height:1.7;font-weight:300}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.15}
+section{padding:80px 22px;max-width:980px;margin:auto;text-align:center}
+.dark{background:var(--ink);color:var(--blush);max-width:none}
+.dark>div{max-width:980px;margin:auto}
+h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:10px;color:var(--ink)}
+.dark h2{color:var(--gold2)}
+.sub{opacity:.75;margin-bottom:40px}
+.orn{color:var(--gold);letter-spacing:.5em;margin:14px 0}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:60px 18px;background:radial-gradient(circle at 50% 0,var(--ink2),var(--ink) 70%);color:var(--blush);text-align:center;max-width:none}
+.std{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.4rem,4vw,2rem);color:var(--gold2)}
+.hero h1{font-size:clamp(2.6rem,9vw,5.5rem);margin:8px 0}
+.hero h1 span{display:block;font-style:italic;font-size:.45em;color:var(--gold);margin:2px 0}
+.date{font-size:1.15rem;letter-spacing:.25em;margin-top:6px}
+.cd{display:flex;gap:14px;justify-content:center;margin-top:26px}
+.cd div{border:1px solid var(--gold);border-radius:10px;padding:10px 0;width:74px}
+.cd b{display:block;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--gold2)}
+.cd small{font-size:.7rem;opacity:.8}
+.hero .go{margin-top:34px;color:var(--gold2);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
+
+/* couple */
+.couple{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px}
+.person img{width:min(100%,260px);aspect-ratio:1;border-radius:50%;object-fit:cover;border:4px solid var(--gold);padding:5px;background:#fff;box-shadow:0 10px 30px rgba(20,24,58,.18)}
+#bride{object-position:50% 66%}
+#groom{object-position:50% 33%}
+.person .of{font-family:'Cormorant Garamond',serif;font-style:italic;color:#8a6d2f;margin-top:16px;font-size:1.15rem}
+.person h3{font-size:clamp(1.6rem,5vw,2.4rem);color:var(--ink);margin:2px 0 8px}
+.person p{font-size:.95rem}
+.amp{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,8vw,4rem);color:var(--gold)}
+
+/* timeline */
+.tl{position:relative;max-width:640px;margin:auto;text-align:left;padding-left:34px;border-left:1px solid var(--gold)}
+.tl div{position:relative;margin-bottom:34px}
+.tl div::before{content:"";position:absolute;left:-41px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--ink)}
+.tl time{font-family:'Cormorant Garamond',serif;color:var(--gold2);font-size:1.3rem;font-style:italic}
+.tl h3{font-size:1.5rem;color:#fff}
+.tl p{opacity:.8;font-size:.95rem}
+
+/* hands */
+.hands img{width:min(100%,420px);border-radius:200px 200px 16px 16px;border:1px solid var(--gold);padding:8px;background:#fff;box-shadow:0 14px 40px rgba(20,24,58,.18)}
+.quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;margin-top:24px;color:var(--ink)}
+
+/* event */
+.card{background:#fff;border:1px solid var(--gold2);border-radius:18px;padding:34px 24px;max-width:560px;margin:auto;box-shadow:0 10px 30px rgba(20,24,58,.08)}
+.card .big{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--ink)}
+.btn{display:inline-block;margin:8px 5px 0;padding:12px 26px;border-radius:40px;background:var(--ink);color:var(--gold2);text-decoration:none;font-size:.95rem;border:1px solid var(--ink);cursor:pointer;font-family:inherit}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--gold)}
+.btn:hover,.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* gallery */
+.gal{columns:2;column-gap:12px}
+.gal img{width:100%;display:block;margin-bottom:12px;border-radius:10px;cursor:zoom-in;border:1px solid var(--gold2)}
+@media(min-width:760px){.gal{columns:3}}
+.lb{position:fixed;inset:0;background:rgba(10,12,30,.94);display:none;align-items:center;justify-content:center;z-index:9;padding:20px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:92vh;border-radius:8px}
+.lb button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:2.2rem;cursor:pointer}
+
+footer{background:var(--ink);color:var(--gold2);text-align:center;padding:50px 20px}
+footer p{opacity:.8;font-size:.9rem}
+@media(max-width:560px){.couple{grid-template-columns:1fr}.cd div{width:64px}}
+@media(prefers-reduced-motion:no-preference){.hero>*{animation:rise 1s both}.hero>*:nth-child(2){animation-delay:.2s}.hero>*:nth-child(3){animation-delay:.4s}.hero>*:nth-child(4){animation-delay:.6s}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="std">Save the Date</p>
+  <h1>John Jenith <span>&amp;</span> Nagakanni</h1>
+  <p class="date">20 · 01 · 2027</p>
+  <div class="cd" id="cd" aria-label="Countdown to the wedding"></div>
+  <a class="go" href="#couple">Scroll to open the invitation</a>
+</header>
+
+<section id="couple">
+  <h2>Two families, one celebration</h2>
+  <p class="sub">With joy in our hearts, we invite you to bless the wedding of</p>
+  <div class="couple">
+    <div class="person">
+      <img id="bride" src="images/bride.jpg" alt="Nagakanni">
+      <p class="of">Daughter of</p>
+      <h3>Murugan &amp; Thangalakshmi</h3>
+      <p>Bride – <b>Nagakanni</b></p>
+    </div>
+    <div class="amp">&amp;</div>
+    <div class="person">
+      <img id="groom" src="images/groom.jpg" alt="John Jenith">
+      <p class="of">Son of</p>
+      <h3>Selvin Durai &amp; Sahaya Mary</h3>
+      <p>Groom – <b>John Jenith</b></p>
+    </div>
+  </div>
+</section>
+
+<div class="dark"><section>
+  <h2>Our Story</h2>
+  <p class="sub">Childhood classmates, two countries, one answer</p>
+  <div class="tl">
+    <div><time>Childhood</time><h3>Classmates</h3><p>They sat in the same class as kids, but never really spoke.</p></div>
+    <div><time>12 July 2025</time><h3>The first chat</h3><p>They started talking on WhatsApp, and Nagakanni felt happy just being around John.</p></div>
+    <div><time>26 July 2025</time><h3>She proposed</h3><p>At 12:00 AM, Nagakanni told John how she felt. John did not say yes right away.</p></div>
+    <div><time>28 July 2025</time><h3>He said yes</h3><p>Two days later, John accepted. Chats and video calls kept them close across the distance, with Nagakanni in Saudi Arabia and John in India.</p></div>
+    <div><time>Their families</time><h3>Blessings from both sides</h3><p>Nagakanni talked to her family and got their yes. John did the same. Though one is Christian and one is Hindu, both families welcomed the match with love.</p></div>
+    <div><time>18 January 2026</time><h3>First meeting</h3><p>After months of calls, they finally met in person.</p></div>
+    <div><time>20 January 2027</time><h3>Forever begins</h3><p>Exactly one year after they met, they marry.</p></div>
+  </div>
+</section></div>
+
+<section class="hands">
+  <img src="images/hands.jpg" alt="Hands held together">
+  <p class="quote">Hand in hand, from today to forever.</p>
+</section>
+
+<div class="dark" id="where"><section>
+  <h2>The Wedding</h2>
+  <p class="sub">We would love to have you with us</p>
+  <div class="card" style="color:var(--text)">
+    <p class="serif" style="color:#8a6d2f;font-style:italic;font-size:1.2rem">Wednesday</p>
+    <p class="big">20 January 2027</p>
+    <p class="orn">✦ ✦ ✦</p>
+    <p id="time">Time: <b>TIME HERE</b></p>
+    <p id="venue"><b>VENUE NAME HERE</b><br>Venue address, City</p>
+    <a class="btn" id="map" href="https://www.google.com/maps/search/?api=1&query=VENUE+NAME+HERE" target="_blank" rel="noopener">View Location</a>
+    <a class="btn alt" id="cal" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=John+Jenith+%26+Nagakanni+Wedding&dates=20270120/20270121" target="_blank" rel="noopener">Add to Calendar</a>
+  </div>
+</section></div>
+
+<section>
+  <h2>Photo Gallery</h2>
+  <p class="sub">A few of our favourite moments</p>
+  <div class="gal" id="gal"></div>
+</section>
+
+<footer>
+  <h2 style="color:var(--gold2)">See you there</h2>
+  <p>Your presence and blessings will make our day complete.</p>
+  <p class="orn">♥</p>
+  <button class="btn" id="share">Share this invitation</button>
+  <p style="margin-top:22px;font-family:'Cormorant Garamond',serif;font-size:1.4rem">John Jenith &amp; Nagakanni · 20.01.2027</p>
+</footer>
+
+<div class="lb" id="lb"><button aria-label="Close">×</button><img alt=""></div>
+
+<script>
+// Gallery photos – add more files to /images and list them here
+const photos=["g1","g2","g3","g4","g5","g6","g7"];
+const gal=document.getElementById("gal");
+photos.forEach((p,i)=>{const im=new Image();im.src=`images/${p}.jpg`;im.alt=`Photo ${i+1}`;im.loading="lazy";gal.appendChild(im)});
+const lb=document.getElementById("lb"),lbi=lb.querySelector("img");
+gal.addEventListener("click",e=>{if(e.target.tagName==="IMG"){lbi.src=e.target.src;lb.classList.add("on")}});
+lb.addEventListener("click",()=>lb.classList.remove("on"));
+addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove("on")});
+
+// Countdown
+const target=new Date("2027-01-20T00:00:00+05:30"),cd=document.getElementById("cd");
+function tick(){let s=Math.max(0,(target-Date.now())/1000|0);
+const v=[["Days",s/86400|0],["Hours",s%86400/3600|0],["Mins",s%3600/60|0],["Secs",s%60]];
+cd.innerHTML=v.map(([l,n])=>`<div><b>${n}</b><small>${l}</small></div>`).join("")}
+tick();setInterval(tick,1000);
+
+// Share
+document.getElementById("share").onclick=async()=>{
+const d={title:"John Jenith & Nagakanni – Wedding Invitation",text:"You are invited to our wedding on 20 January 2027!",url:location.href};
+try{navigator.share?await navigator.share(d):(await navigator.clipboard.writeText(location.href),alert("Link copied!"))}catch(e){}};
+</script>
+</body>
+</html>
